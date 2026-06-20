@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Manrope:wght@200..800&family=Mea+Culpa&family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Felipa&family=Forum&family=Italiana&family=Manrope:wght@200..800&family=Mea+Culpa&family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./images/favicon/favicon.png" type="image/x-icon">
+  <title>J&I</title>
+
+</head>
+
+<body>
+  <div id="intro">
+    <div class="corner_intro top-left intro"></div>
+    <div class="corner_intro top-right intro"></div>
+    <div id="intro-text">
+      <div class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+      <div class="salaam">Assalamu’alaikum</div>
+    </div>
+    <div class="corner_intro bottom-left intro"></div>
+    <div class="corner_intro bottom-right intro"></div>
+  </div>
+  <div class="content">
+    <div id="fireworks"></div>
+    <section class="container">
+      <div class="corner top-left"></div>
+      <div class="corner top-right"></div>
+      <img src="./images/arabicV2.png" class="arabic-img" draggable="false" />
+      <p class="text" id="opening">Mr Javed Iqbal & Mrs Shakila Bibi request the honour of your presence at the walima ceremony of</p>
+      <p class="golden-text" data-text="Junaid Iqbal">Junaid Iqbal</p>
+      <p class="ampersand">&</p>
+      <p class="golden-text" data-text="Iram Khan">Iram Khan</p>
+      <p class="text" id="bride-parents">daughter of Mr Amantullah Khan & Mrs Yasmin Khan </p>
+      <p class="date">June</p>
+      <div class="date-container">
+        <p class="side">Monday</p>
+        <p class="middle">29</p>
+        <p class="side">5:00pm</p>
+      </div>
+      <div id="counter-section">
+        <div id="countdown-content">
+          <p id="wedding-day-text" class="text">wedding day</p>
+          <div class="counter-container">
+            <p class="clock" id="clock-days">
+              <span id="days"></span> <span class="clock-label">days</span>
+            </p>
+            <p class="clock">
+              <span id="hours"></span> <span class="clock-label">hours</span>
+            </p>
+            <p class="clock">
+              <span id="minutes"></span><span class="clock-label">minutes</span>
+            </p>
+            <p class="clock">
+              <span id="seconds"></span><span class="clock-label">seconds</span>
+            </p>
+          </div>
+        </div>
+        <!-- Section to replace the wedding counter when it hits zero -->
+        <p class="golden-text invisible" id="countdown-message" data-text="The walima has begun">The walima has begun
+        </p>
+      </div>
+      <div id="address">
+        <p class="text">Manor Hill House, <br> Bromsgrove, <br> B61 9HE</p>
+        <p class="text">Kindly rsvp before May 29</p>
+      </div>
+      <div class="buttons-container">
+        <button class="primary-button" onclick="runFireworks(5)">
+          <svg width="20" height="20" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d=" M32 6 C20 6 12 16 12 28 C12 41 22 52 32 56 C42 52 52 41 52 28 C52 16 44 6 32 6 Z M32 56 L26 62 L38 62 Z" />
+          </svg>
+          <span> Celebrate</span>
+        </button>
+        <a class="secondary-button" target="_blank"
+          href="https://www.google.com/maps/dir//Manor+Hill+House+Weddings,+Manor+Hill+House,+Swan+Ln,+Upton+Warren,+Bromsgrove+B61+9HE/@52.3184969,-2.1200589,17z/data=!4m16!1m7!3m6!1s0x4870ece053171809:0x99ab2060fe09039b!2sManor+Hill+House+Weddings!8m2!3d52.3184969!4d-2.1174893!16s%2Fg%2F1tdlgr2z!4m7!1m0!1m5!1m1!1s0x4870ece053171809:0x99ab2060fe09039b!2m2!1d-2.1174893!2d52.3184969?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D">
+          <span>Directions</span>
+          <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path
+              d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" />
+          </svg>
+        </a>
+      </div>
+      <div class="corner bottom-left"></div>
+      <div class="corner bottom-right"></div>
+    </section>
+  </div>
+  <div class="invisible" id="finished-content">
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div id="finished-content-text">
+      <div class="golden-text reduce-text-size" data-text="Thank you for attending">Thank you for attending</div>
+    </div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+  </div>
+
+  <!-- fireworks.js CDN -->
+<script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+  <!-- tsparticles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="./js/snow.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/firework.js"></script>
+
+</body>
+
+</html>
